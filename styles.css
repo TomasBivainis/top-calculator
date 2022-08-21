@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Alarm clock';
+  src: url(./font/alarm_clock.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,24 +14,29 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  background-color: #242424;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border: 2px solid #272729;
   height: 70vh;
   width: 50vh;
   padding: 10px;
   border-radius: 10px;
+  background-color: #e3e0d5;
 }
 
 .screen {
   flex: 1 1 0;
-  border: 2px solid red;
+  border: 2px solid #272729;
   border-radius: 10px;
   padding: 10px;
   word-wrap: break-word;
+  background-color: #aabdb2;
+  font-family: 'Alarm clock';
+  font-size: 25px;
 }
 
 .buttons {
@@ -44,6 +54,10 @@ body {
 .button {
   flex: 1 1 0;
   margin: 5px;
+  background-color: #373740;
+  color: white;
+  border: 0;
+  border-radius: 10px;
 }
 
 .row button:first-child {
@@ -52,4 +66,12 @@ body {
 
 .row button:last-child {
   margin-right: 0px;
+}
+
+.erase {
+  background-color: #e8ce20;
+}
+
+.equal {
+  background-color: #ff5964;
 }
